@@ -141,31 +141,50 @@
                         <circle cx="600" cy="300" r="80" fill="#6a11cb" />
                         <text x="600" y="310" fill="#fff" font-family="Arial, sans-serif" font-size="20px" text-anchor="middle">Tech Solutions</text>
                       
-                        <!-- Connecting Lines -->
-                        <line x1="600" y1="300" x2="300" y2="100" stroke="#6a11cb" stroke-width="2" />
-                        <line x1="600" y1="300" x2="300" y2="500" stroke="#6a11cb" stroke-width="2" />
-                        <line x1="600" y1="300" x2="900" y2="100" stroke="#6a11cb" stroke-width="2" />
-                        <line x1="600" y1="300" x2="900" y2="500" stroke="#6a11cb" stroke-width="2" />
+                        <!-- Rotating Nodes -->
+                        <g transform-origin="600 300">
+                          <!-- AI Node -->
+                          <g>
+                            <circle cx="600" cy="120" r="60" fill="#2575fc" />
+                            <text x="600" y="125" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">AI</text>
+                          </g>
                       
-                        <!-- Outer Nodes -->
-                        <circle cx="300" cy="100" r="60" fill="#2575fc" />
-                        <text x="300" y="105" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">AI</text>
+                          <!-- ML Node -->
+                          <g>
+                            <circle cx="480" cy="480" r="60" fill="#2575fc" />
+                            <text x="480" y="485" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">ML</text>
+                          </g>
                       
-                        <circle cx="300" cy="500" r="60" fill="#2575fc" />
-                        <text x="300" y="505" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">ML</text>
+                          <!-- Data Node -->
+                          <g>
+                            <circle cx="720" cy="480" r="60" fill="#2575fc" />
+                            <text x="720" y="485" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">Data</text>
+                          </g>
                       
-                        <circle cx="900" cy="100" r="60" fill="#2575fc" />
-                        <text x="900" y="105" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">Data</text>
+                          <!-- Innovation Node -->
+                          <g>
+                            <circle cx="480" cy="120" r="60" fill="#2575fc" />
+                            <text x="480" y="125" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">Innovation</text>
+                          </g>
+                        </g>
                       
-                        <circle cx="900" cy="500" r="60" fill="#2575fc" />
-                        <text x="900" y="505" fill="#fff" font-family="Arial, sans-serif" font-size="16px" text-anchor="middle">Innovation</text>
+                        <!-- Rotation Animation -->
+                        <style>
+                          g {
+                            animation: rotate 10s linear infinite;
+                          }
                       
-                        <!-- Animated Glow -->
-                        <circle cx="600" cy="300" r="100" fill="none" stroke="#6a11cb" stroke-width="2">
-                          <animate attributeName="r" from="100" to="140" dur="2s" repeatCount="indefinite" />
-                          <animate attributeName="opacity" from="0.5" to="0" dur="2s" repeatCount="indefinite" />
-                        </circle>
+                          @keyframes rotate {
+                            from {
+                              transform: rotate(0deg);
+                            }
+                            to {
+                              transform: rotate(360deg);
+                            }
+                          }
+                        </style>
                       </svg>
+                      
                       
                 </div>
             </div>
