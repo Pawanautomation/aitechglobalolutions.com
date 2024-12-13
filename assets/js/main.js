@@ -1,15 +1,31 @@
-// Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuBtn = document.querySelector('[data-mobile-menu]');
-    const mobileMenu = document.querySelector('[data-mobile-menu-items]');
+    // Navigation dropdown functionality
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
     
-    if (mobileMenuBtn && mobileMenu) {
-        mobileMenuBtn.addEventListener('click', () => {
+    dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector('.nav-link');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        trigger.addEventListener('mouseenter', () => {
+            menu.classList.remove('hidden');
+        });
+        
+        dropdown.addEventListener('mouseleave', () => {
+            menu.classList.add('hidden');
+        });
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
     }
 
-    // Smooth scroll
+    // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -18,13 +34,4 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
-
-    // Form validation
-    const contactForm = document.querySelector('#contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            // Add your form submission logic here
-        });
-    }
 });
