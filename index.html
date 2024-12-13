@@ -1,120 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tech Global Solutions</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="/assets/css/styles.css" rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AI Tech Global Solutions</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="/assets/css/styles.css" rel="stylesheet">
+    </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="container mx-auto px-6 flex justify-between items-center h-24">
-            <!-- Logo -->
-            <a href="/" class="flex items-center">
-                <img src="/assets/images/logo.svg" alt="AI Tech Global Solutions" class="h-16 w-auto">
-            </a>
-
-            <!-- Navigation Links -->
-            <div class="hidden md:flex items-center space-x-8">
-                <a href="/our-work" class="nav-link">Our Work</a>
-                <div class="relative group">
-                    <a href="#" class="nav-link flex items-center">
-                        What We Do
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between h-24 items-center">
+                <!-- Logo Section -->
+                <div class="flex items-center">
+                    <a href="/" class="flex items-center">
+                        <img src="/assets/images/logo.svg" alt="AI Tech Global Solutions" class="h-16 w-auto">
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="#accessibility" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Accessibility Services</a>
-                        <a href="#development" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Development</a>
-                        <a href="#testing" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Testing Services</a>
-                        <a href="#consulting" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Consulting</a>
-                    </div>
                 </div>
-                <div class="relative group">
-                    <a href="#" class="nav-link flex items-center">
-                        Who We Are
-                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-                        </svg>
+    
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/our-work" class="nav-link">Our Work</a>
+                    <!-- What We Do Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="nav-link flex items-center">
+                            What We Do
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-lg py-2 mt-2">
+                            <a href="#accessibility" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Accessibility Services</a>
+                            <a href="#development" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Development</a>
+                            <a href="#testing" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Testing Services</a>
+                            <a href="#consulting" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Consulting</a>
+                        </div>
+                    </div>
+                    <!-- Who We Are Dropdown -->
+                    <div class="relative group">
+                        <a href="#" class="nav-link flex items-center">
+                            Who We Are
+                            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </a>
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-lg py-2 mt-2">
+                            <a href="/about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a>
+                            <a href="/careers" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Careers</a>
+                        </div>
+                    </div>
+                    <a href="/contact" class="border-2 border-black px-6 py-2 rounded-full hover:bg-black hover:text-white transition">
+                        SAY HELLO
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="/about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a>
-                        <a href="/careers" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Careers</a>
-                    </div>
                 </div>
-                <a href="/contact" class="border-hover">SAY HELLO</a>
+    
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2" aria-label="Toggle menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden mobile-menu-button p-2" aria-label="Toggle menu">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="mobile-menu hidden md:hidden">
-            <a href="/our-work" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Our Work</a>
-            <a href="#accessibility" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Accessibility Services</a>
-            <a href="#development" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Development</a>
-            <a href="#testing" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Testing Services</a>
-            <a href="#consulting" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Consulting</a>
-            <a href="/about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a>
-            <a href="/careers" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Careers</a>
-            <a href="/contact" class="border-hover block text-center">SAY HELLO</a>
+    
+            <!-- Mobile Menu -->
+            <div class="mobile-menu hidden md:hidden">
+                <div class="px-2 pt-2 pb-3 space-y-1">
+                    <a href="/our-work" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Our Work</a>
+                    
+                    <!-- Mobile What We Do Submenu -->
+                    <div class="relative">
+                        <button class="mobile-submenu-button w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 rounded flex justify-between items-center">
+                            What We Do
+                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="mobile-submenu hidden pl-4">
+                            <a href="#accessibility" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Accessibility Services</a>
+                            <a href="#development" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Development</a>
+                            <a href="#testing" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testing Services</a>
+                            <a href="#consulting" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Consulting</a>
+                        </div>
+                    </div>
+    
+                    <!-- Mobile Who We Are Submenu -->
+                    <div class="relative">
+                        <button class="mobile-submenu-button w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 rounded flex justify-between items-center">
+                            Who We Are
+                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="mobile-submenu hidden pl-4">
+                            <a href="/about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About Us</a>
+                            <a href="/careers" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Careers</a>
+                        </div>
+                    </div>
+    
+                    <!-- Mobile Contact Button -->
+                    <div class="px-4 py-2">
+                        <a href="/contact" class="inline-block w-full text-center border-2 border-black px-6 py-2 rounded-full hover:bg-black hover:text-white transition">
+                            SAY HELLO
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 py-16">
-        <div class="container mx-auto px-6 max-w-7xl grid grid-cols-1 md:grid-cols-2 items-center">
+    <!-- Hero Section with Enhanced Tagline -->
+ <!-- Hero Section with Enhanced Tagline -->
+<section class="relative bg-gradient-to-r from-blue-600 to-blue-800 py-16">
+    <div class="container mx-auto px-6 max-w-7xl hero-section">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <!-- Left Content -->
-            <div>
+            <div class="hero-left">
                 <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
                     Transforming Ideas into Digital Reality
                 </h1>
                 <p class="text-xl text-blue-100 mb-8">
-                    Empowering businesses with innovative technology solutions for a digital future.
+                    Empowering businesses with innovative technology solutions for a digital future
                 </p>
-                <a href="#contact" class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-all duration-300 hover:shadow-lg">
+                <a href="#contact" 
+                   class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-all duration-300 hover:shadow-lg"
+                   role="button">
                     Start Your Digital Journey
                 </a>
             </div>
 
-            <!-- Right Content - Juggling Animation -->
-            <div class="relative hidden md:block">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" class="w-full h-auto">
-                    <!-- Juggling Figure -->
-                    <circle cx="150" cy="150" r="40" fill="#6a11cb" />
-                    <rect x="140" y="190" width="20" height="60" fill="#6a11cb" />
-                    <line x1="150" y1="190" x2="120" y2="240" stroke="#6a11cb" stroke-width="10" />
-                    <line x1="150" y1="190" x2="180" y2="240" stroke="#6a11cb" stroke-width="10" />
-
-                    <!-- Juggling Balls -->
-                    <circle cx="100" cy="80" r="20" fill="#2575fc">
-                        <text x="100" y="85" fill="#fff" font-family="Arial" font-size="10px" text-anchor="middle">Retail</text>
-                    </circle>
-                    <circle cx="200" cy="80" r="20" fill="#2575fc">
-                        <text x="200" y="85" fill="#fff" font-family="Arial" font-size="10px" text-anchor="middle">Healthcare</text>
-                    </circle>
-                    <circle cx="120" cy="220" r="20" fill="#2575fc">
-                        <text x="120" y="225" fill="#fff" font-family="Arial" font-size="10px" text-anchor="middle">E-commerce</text>
-                    </circle>
-                    <circle cx="180" cy="220" r="20" fill="#2575fc">
-                        <text x="180" y="225" fill="#fff" font-family="Arial" font-size="10px" text-anchor="middle">Testing</text>
-                    </circle>
+            <!-- Right Content -->
+            <div class="hero-right">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" class="w-96 h-96">
+                    <!-- Juggling Man -->
+                    <!-- Man -->
+                    <circle cx="250" cy="400" r="50" fill="#6a11cb" />
+                    <rect x="220" y="200" width="60" height="200" fill="#6a11cb" />
+                    <line x1="250" y1="250" x2="180" y2="300" stroke="#6a11cb" stroke-width="10" />
+                    <line x1="250" y1="250" x2="320" y2="300" stroke="#6a11cb" stroke-width="10" />
+                    <line x1="250" y1="400" x2="200" y2="460" stroke="#6a11cb" stroke-width="10" />
+                    <line x1="250" y1="400" x2="300" y2="460" stroke="#6a11cb" stroke-width="10" />
+                    <!-- Balls -->
+                    <circle cx="150" cy="150" r="30" fill="#2575fc" />
+                    <text x="150" y="155" fill="#fff" font-size="12px" text-anchor="middle">E-commerce</text>
+                    <circle cx="250" cy="100" r="30" fill="#2575fc" />
+                    <text x="250" y="105" fill="#fff" font-size="12px" text-anchor="middle">Healthcare</text>
+                    <circle cx="350" cy="150" r="30" fill="#2575fc" />
+                    <text x="350" y="155" fill="#fff" font-size="12px" text-anchor="middle">Retail</text>
+                    <circle cx="200" cy="250" r="30" fill="#2575fc" />
+                    <text x="200" y="255" fill="#fff" font-size="12px" text-anchor="middle">Accessibility</text>
+                    <circle cx="300" cy="250" r="30" fill="#2575fc" />
+                    <text x="300" y="255" fill="#fff" font-size="12px" text-anchor="middle">Testing</text>
                 </svg>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+
+    <!-- Vision & Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Vision</h2>
+                    <p class="text-gray-600 text-lg">
+                        To be the catalyst for digital transformation, enabling organizations to thrive in an ever-evolving technological landscape.
+                    </p>
+                </div>
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                    <p class="text-gray-600 text-lg">
+                        Delivering innovative solutions that drive efficiency, growth, and success for our clients through cutting-edge technology and expertise.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Other Sections -->
-    <!-- Add Vision, Mission, and Industries sections here, as in your original code -->
+    <!-- Enhanced Industries Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Industries We Serve</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Banking Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="/assets/images/banking.jpg" alt="Banking Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Banking & Finance</h3>
+                        <p class="text-gray-600">Secure and innovative solutions for modern financial institutions.</p>
+                    </div>
+                </div>
+                
+                <!-- Healthcare Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="/assets/images/healthcare.jpg" alt="Healthcare Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Healthcare</h3>
+                        <p class="text-gray-600">Digital transformation for better patient care and management.</p>
+                    </div>
+                </div>
 
+                <!-- Retail Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="/assets/images/retail.jpg" alt="Retail Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Retail & E-commerce</h3>
+                        <p class="text-gray-600">Seamless digital experiences for modern retail businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Add this after the Industries Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <!-- Accessibility Services Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Digital Accessibility Excellence</h2>
+            <p class="text-xl text-gray-600">Making digital experiences accessible to everyone</p>
+        </div>
+
+        <!-- Services Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Accessibility Development</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>WCAG 2.1 AA & AAA Compliant Development</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Accessible UI Component Libraries</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Screen Reader Optimization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Keyboard Navigation Enhancement</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Accessibility Testing</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Automated Accessibility Testing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Manual Expert Evaluation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>User Testing with Assistive Technologies</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Compliance Documentation & Reporting</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Case Studies -->
+        <div class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-12">Success Stories</h2>
+            
+            <!-- Case Study 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-blue-600 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Major Banking Application</h3>
+                        <p class="text-blue-100 mb-4">Complete accessibility transformation for a leading financial institution</p>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-3 py-1 bg-blue-500 rounded-full text-sm">WCAG 2.1</span>
+                            <span class="px-3 py-1 bg-blue-500 rounded-full text-sm">Banking</span>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h4 class="font-bold mb-4">Challenge</h4>
+                        <p class="text-gray-600 mb-4">Transform a legacy banking platform to meet WCAG 2.1 AA compliance while maintaining security and performance.</p>
+                        
+                        <h4 class="font-bold mb-4">Solution</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Comprehensive accessibility audit</li>
+                            <li>• Implementation of keyboard navigation patterns</li>
+                            <li>• Screen reader optimization</li>
+                            <li>• Color contrast improvements</li>
+                        </ul>
+                        
+                        <h4 class="font-bold mt-4 mb-2">Results</h4>
+                        <p class="text-gray-600">Achieved WCAG 2.1 AA compliance with 98% accessibility score and improved user satisfaction by 45%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-green-600 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Healthcare Portal</h3>
+                        <p class="text-green-100 mb-4">Making healthcare information accessible to all users</p>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-3 py-1 bg-green-500 rounded-full text-sm">Healthcare</span>
+                            <span class="px-3 py-1 bg-green-500 rounded-full text-sm">ADA</span>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h4 class="font-bold mb-4">Challenge</h4>
+                        <p class="text-gray-600 mb-4">Ensure critical health information is accessible to users with various disabilities while maintaining privacy standards.</p>
+                        
+                        <h4 class="font-bold mb-4">Solution</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Implemented ARIA landmarks and labels</li>
+                            <li>• Enhanced form accessibility</li>
+                            <li>• Added alternative text for medical images</li>
+                            <li>• Improved navigation patterns</li>
+                        </ul>
+                        
+                        <h4 class="font-bold mt-4 mb-2">Results</h4>
+                        <p class="text-gray-600">100% ADA compliance achieved with zero accessibility-related complaints in the first year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
