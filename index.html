@@ -3,73 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<link rel="canonical" href="https://aitechglobalolutions.com">
-    <title>AI Tech Global Solutions - Innovative Software Solutions</title>
+    <title>AI Tech Global Solutions - Innovative Digital Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="/assets/css/styles.css" rel="stylesheet">
 </head>
 <body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg fixed w-full z-50">
-        <div class="container-custom">
+        <div class="container mx-auto px-4">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <a href="/" class="text-2xl font-bold text-blue-600">AI Tech Global Solutions</a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link">Home</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="services.html" class="nav-link">Services</a>
-                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600">Services</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">Contact Us</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="custom-gradient section-padding">
-        <div class="container-custom">
-            <div class="lg:flex lg:items-center lg:justify-between">
-                <div class="lg:w-1/2">
-                    <h1 class="text-4xl font-extrabold text-white sm:text-5xl md:text-6xl">
-                        Transform Your Vision Into Digital Reality
-                    </h1>
-                    <p class="mt-6 text-xl text-blue-100">
-                        Innovative software solutions for businesses across industries
+    <!-- Hero Section with Enhanced Tagline -->
+    <section class="relative min-h-screen bg-gradient-to-r from-blue-600 to-blue-800">
+        <div class="absolute inset-0">
+            <img src="/assets/images/hero-bg.jpg" alt="Digital Innovation" class="w-full h-full object-cover opacity-20">
+        </div>
+        <div class="relative container mx-auto px-6 pt-32 text-center">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8">
+                Transforming Ideas into Digital Reality
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100 mb-12">
+                Empowering businesses with innovative technology solutions for a digital future
+            </p>
+            <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition">
+                Start Your Digital Journey
+            </a>
+        </div>
+    </section>
+
+    <!-- Vision & Mission Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Vision</h2>
+                    <p class="text-gray-600 text-lg">
+                        To be the catalyst for digital transformation, enabling organizations to thrive in an ever-evolving technological landscape.
                     </p>
-                    <div class="mt-10">
-                        <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-full font-medium hover:bg-gray-100">
-                            Start Your Project
-                        </a>
-                    </div>
                 </div>
-                <div class="mt-12 lg:mt-0 lg:w-1/2">
-                    <img src="/assets/images/hero-image.jpg" alt="Digital Transformation" class="rounded-lg shadow-xl">
+                <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Mission</h2>
+                    <p class="text-gray-600 text-lg">
+                        Delivering innovative solutions that drive efficiency, growth, and success for our clients through cutting-edge technology and expertise.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industries Section -->
-    <section class="bg-white section-padding">
-        <div class="container-custom">
-            <h2 class="text-3xl font-bold text-center mb-12">Industries We Serve</h2>
+    <!-- Enhanced Industries Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-16">Industries We Serve</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- BFSI -->
-                <div class="p-6 border rounded-lg hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-4">Banking & Finance</h3>
-                    <p>Digital transformation solutions for financial institutions.</p>
+                <!-- Banking Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="/assets/images/banking.jpg" alt="Banking Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Banking & Finance</h3>
+                        <p class="text-gray-600">Secure and innovative solutions for modern financial institutions.</p>
+                    </div>
                 </div>
-                <!-- Healthcare -->
-                <div class="p-6 border rounded-lg hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-4">Healthcare</h3>
-                    <p>Innovative solutions for healthcare providers and services.</p>
+                
+                <!-- Healthcare Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="/assets/images/healthcare.jpg" alt="Healthcare Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Healthcare</h3>
+                        <p class="text-gray-600">Digital transformation for better patient care and management.</p>
+                    </div>
                 </div>
-                <!-- Retail -->
-                <div class="p-6 border rounded-lg hover:shadow-lg transition">
-                    <h3 class="text-xl font-semibold mb-4">Retail & E-commerce</h3>
-                    <p>Digital solutions for modern retail experiences.</p>
+
+                <!-- Retail Card -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105">
+                    <img src="/assets/images/retail.jpg" alt="Retail Solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-4">Retail & E-commerce</h3>
+                        <p class="text-gray-600">Seamless digital experiences for modern retail businesses.</p>
+                    </div>
                 </div>
             </div>
         </div>
