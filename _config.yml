@@ -1,0 +1,3 @@
+# Create _config.yml
+echo "url: https://aitechglobalolutions.com
+enforce_ssl: aitechglobalolutions.com" > _config.yml
