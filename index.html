@@ -115,20 +115,42 @@
     </nav>
 
     <!-- Hero Section with Enhanced Tagline -->
-    <section class="relative min-h-screen bg-gradient-to-r from-blue-600 to-blue-800">
-        <div class="absolute inset-0">
-            <img src="/assets/images/hero-bg.jpg" alt="Digital Innovation" class="w-full h-full object-cover opacity-20">
+    <section class="relative bg-gradient-to-r from-blue-600 to-blue-800 py-16 md:py-24"> <!-- Adjusted padding -->
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:items-center md:justify-between">
+                <!-- Left Content -->
+                <div class="md:w-1/2 text-left"> <!-- Changed from center to left alignment -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+                        Transforming Ideas into Digital Reality
+                    </h1>
+                    <p class="text-xl text-blue-100 mb-8">
+                        Empowering businesses with innovative technology solutions for a digital future
+                    </p>
+                    <a href="#contact" 
+                       class="inline-block bg-white text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-all duration-300 hover:shadow-lg"
+                       role="button">
+                        Start Your Digital Journey
+                    </a>
+                </div>
+                <!-- Right Content -->
+                <div class="hidden md:block md:w-1/2 pl-12">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-blue-500 rounded-lg transform rotate-3 opacity-20"></div>
+                        <img 
+                            src="/assets/images/hero-bg.jpg" 
+                            alt="Digital Innovation Visualization" 
+                            class="relative rounded-lg shadow-xl transform hover:scale-[1.02] transition-transform duration-300"
+                        >
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="relative container mx-auto px-6 pt-32 text-center">
-            <h1 class="text-5xl md:text-7xl font-bold text-white mb-8">
-                Transforming Ideas into Digital Reality
-            </h1>
-            <p class="text-xl md:text-2xl text-blue-100 mb-12">
-                Empowering businesses with innovative technology solutions for a digital future
-            </p>
-            <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition">
-                Start Your Digital Journey
-            </a>
+        <!-- Subtle Scroll Indicator -->
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce hidden md:block">
+            <span class="sr-only">Scroll for more content</span>
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
         </div>
     </section>
 
