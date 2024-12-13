@@ -20,18 +20,27 @@
                         <img src="/assets/images/logo.svg" alt="AI Tech Global Solutions" class="h-16 w-auto">
                     </a>
                 </div>
-
+    
                 <!-- Desktop Navigation -->
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="/our-work" class="nav-link">Our Work</a>
+                    <!-- What We Do Dropdown -->
                     <div class="relative group">
-                        <a href="/services" class="nav-link flex items-center">
+                        <a href="#" class="nav-link flex items-center">
                             What We Do
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute hidden group-hover:block w-48 bg-white shadow-lg py-2 mt-2">
+                            <a href="#accessibility" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Accessibility Services</a>
+                            <a href="#development" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Development</a>
+                            <a href="#testing" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Testing Services</a>
+                            <a href="#consulting" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Consulting</a>
+                        </div>
                     </div>
+                    <!-- Who We Are Dropdown -->
                     <div class="relative group">
                         <a href="#" class="nav-link flex items-center">
                             Who We Are
@@ -39,7 +48,6 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </a>
-                        <!-- Dropdown Menu -->
                         <div class="absolute hidden group-hover:block w-48 bg-white shadow-lg py-2 mt-2">
                             <a href="/about" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">About Us</a>
                             <a href="/careers" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Careers</a>
@@ -49,37 +57,43 @@
                         SAY HELLO
                     </a>
                 </div>
-
+    
                 <!-- Mobile Menu Button -->
                 <div class="md:hidden">
-                    <button class="mobile-menu-button p-2">
+                    <button class="mobile-menu-button p-2" aria-label="Toggle menu">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                         </svg>
                     </button>
                 </div>
             </div>
-
+    
             <!-- Mobile Menu -->
             <div class="mobile-menu hidden md:hidden">
                 <div class="px-2 pt-2 pb-3 space-y-1">
                     <a href="/our-work" class="block px-4 py-2 text-gray-800 hover:bg-gray-100 rounded">Our Work</a>
+                    
+                    <!-- Mobile What We Do Submenu -->
                     <div class="relative">
                         <button class="mobile-submenu-button w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 rounded flex justify-between items-center">
                             What We Do
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
                         <div class="mobile-submenu hidden pl-4">
-                            <a href="/services" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Services</a>
-                            <a href="/solutions" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Solutions</a>
+                            <a href="#accessibility" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Accessibility Services</a>
+                            <a href="#development" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Development</a>
+                            <a href="#testing" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Testing Services</a>
+                            <a href="#consulting" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Consulting</a>
                         </div>
                     </div>
+    
+                    <!-- Mobile Who We Are Submenu -->
                     <div class="relative">
                         <button class="mobile-submenu-button w-full text-left px-4 py-2 text-gray-800 hover:bg-gray-100 rounded flex justify-between items-center">
                             Who We Are
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <svg class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
                             </svg>
                         </button>
@@ -88,6 +102,8 @@
                             <a href="/careers" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Careers</a>
                         </div>
                     </div>
+    
+                    <!-- Mobile Contact Button -->
                     <div class="px-4 py-2">
                         <a href="/contact" class="inline-block w-full text-center border-2 border-black px-6 py-2 rounded-full hover:bg-black hover:text-white transition">
                             SAY HELLO
@@ -170,7 +186,142 @@
             </div>
         </div>
     </section>
+<!-- Add this after the Industries Section -->
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <!-- Accessibility Services Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Digital Accessibility Excellence</h2>
+            <p class="text-xl text-gray-600">Making digital experiences accessible to everyone</p>
+        </div>
 
+        <!-- Services Overview -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20">
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Accessibility Development</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>WCAG 2.1 AA & AAA Compliant Development</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Accessible UI Component Libraries</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Screen Reader Optimization</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Keyboard Navigation Enhancement</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold mb-4">Accessibility Testing</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Automated Accessibility Testing</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Manual Expert Evaluation</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>User Testing with Assistive Technologies</span>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="w-6 h-6 text-blue-600 mr-2 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                        </svg>
+                        <span>Compliance Documentation & Reporting</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Case Studies -->
+        <div class="mt-20">
+            <h2 class="text-3xl font-bold text-center mb-12">Success Stories</h2>
+            
+            <!-- Case Study 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden mb-12">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-blue-600 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Major Banking Application</h3>
+                        <p class="text-blue-100 mb-4">Complete accessibility transformation for a leading financial institution</p>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-3 py-1 bg-blue-500 rounded-full text-sm">WCAG 2.1</span>
+                            <span class="px-3 py-1 bg-blue-500 rounded-full text-sm">Banking</span>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h4 class="font-bold mb-4">Challenge</h4>
+                        <p class="text-gray-600 mb-4">Transform a legacy banking platform to meet WCAG 2.1 AA compliance while maintaining security and performance.</p>
+                        
+                        <h4 class="font-bold mb-4">Solution</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Comprehensive accessibility audit</li>
+                            <li>• Implementation of keyboard navigation patterns</li>
+                            <li>• Screen reader optimization</li>
+                            <li>• Color contrast improvements</li>
+                        </ul>
+                        
+                        <h4 class="font-bold mt-4 mb-2">Results</h4>
+                        <p class="text-gray-600">Achieved WCAG 2.1 AA compliance with 98% accessibility score and improved user satisfaction by 45%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/3 bg-green-600 p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">Healthcare Portal</h3>
+                        <p class="text-green-100 mb-4">Making healthcare information accessible to all users</p>
+                        <div class="flex items-center space-x-2">
+                            <span class="px-3 py-1 bg-green-500 rounded-full text-sm">Healthcare</span>
+                            <span class="px-3 py-1 bg-green-500 rounded-full text-sm">ADA</span>
+                        </div>
+                    </div>
+                    <div class="md:w-2/3 p-8">
+                        <h4 class="font-bold mb-4">Challenge</h4>
+                        <p class="text-gray-600 mb-4">Ensure critical health information is accessible to users with various disabilities while maintaining privacy standards.</p>
+                        
+                        <h4 class="font-bold mb-4">Solution</h4>
+                        <ul class="text-gray-600 space-y-2">
+                            <li>• Implemented ARIA landmarks and labels</li>
+                            <li>• Enhanced form accessibility</li>
+                            <li>• Added alternative text for medical images</li>
+                            <li>• Improved navigation patterns</li>
+                        </ul>
+                        
+                        <h4 class="font-bold mt-4 mb-2">Results</h4>
+                        <p class="text-gray-600">100% ADA compliance achieved with zero accessibility-related complaints in the first year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>
