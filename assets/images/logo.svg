@@ -18,27 +18,16 @@
     <text x="100" y="100" font-family="Arial" font-style="italic" font-size="14" fill="#666">Innovation Through Intelligence</text>
     
     <!-- Connected dots -->
-    <g>
-        <circle cx="340" cy="30" r="3" fill="#0066cc">
-            <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="360" cy="50" r="3" fill="#0066cc">
-            <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <circle cx="340" cy="70" r="3" fill="#0066cc">
-            <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <!-- Keeping the original right-end node -->
-        <circle cx="380" cy="50" r="3" fill="#0066cc">
-            <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite"/>
-        </circle>
-        <path d="M340 30 L360 50 L340 70 L380 50"
-              stroke="#0066cc"
-              stroke-width="1">
-            <animate attributeName="stroke-width"
-                     values="1;2;1"
-                     dur="3s"
-                     repeatCount="indefinite"/>
-        </path>
-    </g>
+    <circle cx="340" cy="30" r="3" fill="#0066cc">
+        <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="360" cy="50" r="3" fill="#0066cc">
+        <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" begin="0.5s" />
+    </circle>
+    <circle cx="340" cy="70" r="3" fill="#0066cc">
+        <animate attributeName="r" values="2;4;2" dur="2s" repeatCount="indefinite" begin="1s" />
+    </circle>
+    <path d="M340 30 L360 50 L340 70" stroke="#0066cc" stroke-width="1" fill="none">
+        <animate attributeName="stroke-width" values="1;2;1" dur="3s" repeatCount="indefinite" />
+    </path>
 </svg>
